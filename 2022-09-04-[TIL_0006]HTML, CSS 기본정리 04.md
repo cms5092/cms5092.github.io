@@ -1,0 +1,74 @@
+
+2022.09.06.화 // [Start-kit] HTML / CSS_04.[CSS] 도입
+========
+
+### 부트캠프 사전 스터디 기본 교육자료 HTML/CSS 정리     
+###### 복습을 하며 공부하는건 좋은데 방식이 좋지않아 진도가 너무 느려 예제를 클론코딩하며 체득을 우선해야겠다.   
+
+```js
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>html&css basic4</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+
+        <style>
+            h2{
+                color: #408090;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 style="color: red;">FRONTEND 101</h1>
+
+        <div id="profile" class="contentWrap">
+            <h2>자기소개</h2>
+            <img width="100" alt="내 프사" src="https://firebasestorage.googleapis.com/v0/b/your-pos-a17a5.appspot.com/o/profile.png?alt=media&token=dd317a02-dbde-43aa-a6ce-08ff221b0e75">
+            <p calss="profileDetail">이름: 최민수</p>
+            <p class="profileDetail">직업: 프론트엔드 개발자</p>
+        </div>
+
+        <div id="todayClass" class="contentWrap">
+            <h2>이번 수업 내용</h2>
+            <p>tag 분석!</p>
+            <a href= "https://www.w3schools.com/tags/tag_div.asp">div 태그?</a>
+
+
+            <div id="important">
+                <h3>중요한 태그들..</h3>
+                <ul>
+                    <li>ul, ol, li</li>
+                    <li>p, span</li>
+                    <li>a</li>
+                    <li>div</li>
+                    <li>header, footer</li>
+                    <li>button</li>
+                    <li>table, tr, th, td, tbody, thead(이건 나중에)</li>
+                    <li>등등</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
+```
+
+<img src="/_posts/TIL_0006_1.png" width="290px" height="440px"></img>
+
+****
+◆정리
+1. css이라는 디자인을 html이라는 정보에 입히는 방법은 크게 3가지가 있다.    
+1-1. **인라인스타일** 예시 // ```<h1 style="color: red;">FRONTEND 101</h1>```   
+      빠르고 편하지만 가독성이 떨어지고 HTML과 CSS가 혼재돼 유지보수 불리함    
+1-2. **style태그** 예시 // ```<style> h2 {color: #408090;} </style>```    
+      편하고 빠른편이지만, 기능적으로 HT~과 CSS가 결합돼 유지보수 불리함.   
+      →html은 html파일에. 디자인은 css파일에 저장하여 확인하는것 추천.   
+1-3. **분리된 파일 작성** 예시 // ```<link href="style.css" rel="stylesheet" type="text/css" />```   
+      외부의 css파일을 작성하여 연동   
+
+2-1. **CSS파일 별도 작성법** 별도의 <html>과 같은 영역태그없이 태그 선택자, 속성, 밸류를 입력하고 css확장자로 저장   
+2-2. **CSS파일 연결법** <link href="파일경로" rel(html파일과 css파일의 관계 설명 속성)="stylesheet"(css파일 연결땐 항상 동일값) type(연결되는 파일값?)="text/css"(css는 항상 동일)    
+
+3. [**CSS태그 정리**](https://msm1307.tistory.com/entry/CSS-%ED%83%9C%EA%B7%B8)
