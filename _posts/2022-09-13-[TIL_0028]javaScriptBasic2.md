@@ -1,5 +1,5 @@
 
-2022.09.12.월 // [javascript] basic2
+2022.09.13.화 // [javascript] basic2
 ========
 
 ## 부트캠프 사전 스터디 기본 교육자료 HTML/CSS 정리   
